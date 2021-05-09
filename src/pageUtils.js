@@ -1,10 +1,10 @@
 export function filenameToSlug(filename) {
-  const chunks = filename.replace('.html.markdown', '').split('-');
+  const chunks = filename.replace('.md', '').split('-');
   return `${chunks.shift()}/${chunks.shift()}/${chunks.shift()}/${chunks.join('-')}`;
 }
 
 export function filenameToParams(filename) {
-  const chunks = filename.replace('.html.markdown', '').split('-');
+  const chunks = filename.replace('.md', '').split('-');
 
   return {
     year: chunks.shift(),
@@ -21,7 +21,7 @@ export function slugToPath(year, month, day, slug) {
 export const Config = {
   site_name: 'bigardone.dev',
   title: 'bigardone.dev',
-  description: '',
+  description: 'My name is Ricardo García Vega, and I am a passionate full-stack developer living on the northern coast of Spain and working remotely. I love building web applications using Elixir, Phoenix and Elm, and sharing my coding experiences in this blog.',
   url: 'https://bigardone.dev',
   locale: 'en',
   author: 'Ricardo Garcia Vega',

@@ -452,5 +452,5 @@ Happy coding!
 
 
 [0ff361bf]: /blog/2016/05/03/building-phoenix-battleship-pt-2/ "Building Phoenix Battleship (pt. 2)"
-[d7a21b37]: http://elixir-lang.org/docs/stable/elixir/Agent.html "Agent"
+[d7a21b37]: https://elixir-lang.org/docs/stable/elixir/Agent.html "Agent"
 [16b56e99]: https://phoenix-battleship.herokuapp.com/ "Phoenix Battleship"

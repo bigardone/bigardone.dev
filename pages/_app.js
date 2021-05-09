@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }) {
   const title = pageProps.title ? pageProps.title : Config.title;
 
   if (typeof window !== 'undefined') {
-    ReactGA.initialize('UA-33087017-2');
+    ReactGA.initialize('UA-37802122-1');
     ReactGA.pageview(window.location.pathname + window.location.search);
   }
 

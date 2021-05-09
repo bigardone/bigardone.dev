@@ -26,3 +26,11 @@ export default function AboutPage() {
     </section>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {
+      title: 'About',
+    },
+  };
+}

@@ -87,7 +87,7 @@ export async function getStaticProps({
   },
 }) {
   const markdownWithMetadata = fs
-    .readFileSync(path.join('blog', `${slugToPath(year, month, day, slug)}.html.markdown`))
+    .readFileSync(path.join('blog', `${slugToPath(year, month, day, slug)}.md`))
     .toString();
 
   const { data, content } = matter(markdownWithMetadata);

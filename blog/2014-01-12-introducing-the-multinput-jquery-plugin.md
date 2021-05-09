@@ -3,17 +3,17 @@ title: Introducing the MultInput jQuery plugin
 date: 2014-01-12
 tags: jquery, coffeescript, sass
 ---
-Last month I discovered <a target="_blank" href="http://www.bucketlistly.com/">BucketListly</a>, a web application that lets you create a bucket list of real life goals, earn points and badges completing them, share your progress with your family and friends and some more nice features which gives you an extra motivation to improve oneself. As the new year was around the corner, I decided to give it a try and create my new year's resolution list adding some of the goals I want to achieve in 2014. 
+Last month I discovered <a target="_blank" href="https://www.bucketlistly.com/">BucketListly</a>, a web application that lets you create a bucket list of real life goals, earn points and badges completing them, share your progress with your family and friends and some more nice features which gives you an extra motivation to improve oneself. As the new year was around the corner, I decided to give it a try and create my new year's resolution list adding some of the goals I want to achieve in 2014.
 
 One of this goals is to start sharing into **GitHub** some of the stuff I like to create, like a small **jQuery** plugin I've been working on recently, using **CoffeeScript** and **Sass**.
 
 <!--more-->
 
 ### Enter the MultInput
-The <a href="http://codeloveandboards.com/multinput/" target="_blank">MultInput</a> is a simple **jQuery** plugin which lets you split automatically any form text input  into multiple smaller inputs by specifying a pattern of your choice. The initial idea came from helping the user to introduce any kind of account number, serial number or whatever combination between letters and numbers following a pattern in an easier way. So if the user has to introduce a value in a field following a pattern like *AZ-9999-9999-9999*, you can apply the plugin to that field by just adding two `data` attributes to the field:
+The <a href="https://codeloveandboards.com/multinput/" target="_blank">MultInput</a> is a simple **jQuery** plugin which lets you split automatically any form text input  into multiple smaller inputs by specifying a pattern of your choice. The initial idea came from helping the user to introduce any kind of account number, serial number or whatever combination between letters and numbers following a pattern in an easier way. So if the user has to introduce a value in a field following a pattern like *AZ-9999-9999-9999*, you can apply the plugin to that field by just adding two `data` attributes to the field:
 
 	<input type="text" data-multinput data-pattern="AZ-9999-9999-9999">
-  
+
 And the plugin will do the following:
 
 1. Check if the pattern is correct.
@@ -35,4 +35,4 @@ It is in a very early stage of development and I'm planing to add more features 
 
 Happy coding!
 
-<a href="http://codeloveandboards.com/multinput/" target="_blank">MultInput homepage</a> - <a href="https://github.com/bigardone/multinput/" target="_blank">MultInput on GitHub</a>
+<a href="https://codeloveandboards.com/multinput/" target="_blank">MultInput homepage</a> - <a href="https://github.com/bigardone/multinput/" target="_blank">MultInput on GitHub</a>

@@ -487,5 +487,5 @@ demo and final source code:
 Happy coding!
 
 
-  [c0a8e4d0]: /blog/2016/01/18/trello-tribute-with-phoenix-and-react-pt-5.html.markdown "Part 5"
-  [d3ecc194]: /blog/2016/01/14/trello-tribute-with-phoenix-and-react-pt-4/ "Part 4"
+  [c0a8e4d0]: /blog/2016/01/18/trello-tribute-with-phoenix-and-react-pt-5 "Part 5"
+  [d3ecc194]: /blog/2016/01/14/trello-tribute-with-phoenix-and-react-pt-4 "Part 4"
