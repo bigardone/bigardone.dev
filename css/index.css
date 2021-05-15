@@ -11,3 +11,14 @@
   color: #9CA3AF !important;
 }
 
+.prose .index {
+  @apply p-4 mb-8 text-sm bg-gray-50;
+}
+
+.prose .index p {
+  @apply mt-0;
+}
+
+.prose .btn {
+  @apply px-4 py-3 text-xs text-white no-underline uppercase bg-purple-500 rounded-sm transition-colors hover:bg-purple-800;
+}

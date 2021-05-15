@@ -8,7 +8,7 @@ export default function Tags({ tags }) {
   const tagNodes = taglist.map(tag => (
     <div
       key={tag.trim()}
-      className="p-1 mb-2 mr-2 bg-gray-100 rounded-sm"
+      className="p-2 mb-2 mr-2 bg-gray-100 rounded-md"
     >
       {tag.trim()}
     </div>

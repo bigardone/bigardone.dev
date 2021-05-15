@@ -22,10 +22,10 @@ published: true
     <li><a href="/blog/2016/02/24/trello-tribute-with-phoenix-and-react-pt-11/">Adding lists and cards</a></li>
     <li><a href="/blog/2016/03/04/trello-tribute-with-phoenix-and-react-pt-12/">Deploying our application on Heroku</a></li>
   </ol>
-
   <a href="https://phoenix-trello.herokuapp.com/"><i class="fa fa-cloud"></i> Live demo</a> |
   <a href="https://github.com/bigardone/phoenix-trello"><i class="fa fa-github"></i> Source code</a>
 </div>
+
 ## Adding lists and cards
 In the [last part][c7c1ac93] we created a simple, yet useful, mechanism for tracking connected
 members to a board's channel with the help of **OTP** and the **GenServer** behaviour.

@@ -4,6 +4,7 @@ date: 2018-06-09
 tags: elixir, phoenix, elm
 excerpt: Project setup and the initial functionality for storing and verifying authentication tokens
 ---
+
 <div class="index">
   <p>This post belongs to the <strong>Elixir and Phoenix basic passwordless and databaseless authentication</strong> series.</p>
   <ol>
@@ -11,7 +12,6 @@ excerpt: Project setup and the initial functionality for storing and verifying a
     <li><a href="/blog/2018/06/20/elixir-and-phoenix-basic-passwordless-and-databaseless-authentication-pt-2">Sending authentication link emails and the user socket connection</a></li>
     <li><a href="/blog/2018/09/01/elixir-and-phoenix-basic-passwordless-and-databaseless-authentication-pt-3">Setting up webpack as our asset bundler and the Elm single-page application</a></li>
   </ol>
-
   <a href="https://github.com/bigardone/passwordless-auth" target="_blank"><i class="fa fa-github"></i> Source code</a>
 </div>
 

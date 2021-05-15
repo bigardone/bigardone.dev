@@ -1,4 +1,8 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable import/no-extraneous-dependencies */
+import '@fontsource/fira-code';
+import '@fontsource/montserrat';
+import '@fontsource/montserrat/600.css';
 import '../css/index.css';
 import Head from 'next/head';
 import ReactGA from 'react-ga';
@@ -20,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <title>{`${title} | ${Config.site_name}`}</title>
+        <title>{`${title} · ${Config.site_name}`}</title>
         <meta
           name="description"
           content={pageProps.description ? pageProps.description : Config.description}
@@ -96,9 +100,6 @@ function MyApp({ Component, pageProps }) {
             />
           </>
         )}
-
-
-        <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Raleway:400,500&display=optimal" />
         <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
 

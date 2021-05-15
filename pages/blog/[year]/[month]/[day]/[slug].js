@@ -6,11 +6,11 @@ import matter from 'gray-matter';
 import path from 'path';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import nord from 'react-syntax-highlighter/dist/cjs/styles/hljs/nord';
 import PostMeta from '../../../../../components/postMeta';
 import Share from '../../../../../components/share';
-import Tags from '../../../../../components/tags';
 import {
   filenameToParams, Config, formatDate, calculateReadingTime, slugToPath,
 } from '../../../../../src/pageUtils';
@@ -19,6 +19,7 @@ const CodeBlock = ({ language, value }) => (
   <SyntaxHighlighter
     language={language}
     style={nord}
+    customStyle={{ fontFamily: 'Fira Code' }}
   >
     {value}
   </SyntaxHighlighter>
@@ -54,17 +55,9 @@ export default function Post({ post }) {
           plugins={[gfm]}
           source={content}
           renderers={{ code: CodeBlock }}
+          rehypePlugins={[rehypeRaw]}
         />
       </article>
-      {/* <DiscussionEmbed */}
-      {/*   shortname="talentoit" */}
-      {/*   config={{ */}
-      {/*     url, */}
-      {/*     identifier: slug, */}
-      {/*     title, */}
-      {/*     language: 'es_ES', */}
-      {/*   }} */}
-      {/* /> */}
     </section>
   );
 }
