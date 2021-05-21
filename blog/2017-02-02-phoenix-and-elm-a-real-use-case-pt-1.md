@@ -6,7 +6,6 @@ excerpt:
   Introduction to creating a SPA with Phoenix and Elm.
 ---
 
-
 <div class="index">
   <p>This post belongs to the <strong>Phoenix and Elm, a real use case</strong> series.</p>
   <ol>
@@ -17,7 +16,6 @@ excerpt:
     <li><a href="/blog/2017/03/07/phoenix-and-elm-a-real-use-case-pt-5/">Implementing Elm routing</a></li>
     <li><a href="/blog/2017/03/19/phoenix-and-elm-a-real-use-case-pt-6/">Poenix and Elm communication through WebSockets</a></li>
   </ol>
-
   <a href="https://phoenix-and-elm.herokuapp.com/" target="_blank"><i class="fa fa-cloud"></i> Live demo</a> |
   <a href="https://github.com/bigardone/phoenix-and-elm" target="_blank"><i class="fa fa-github"></i> Source code</a>
 </div>

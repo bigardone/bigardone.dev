@@ -12,7 +12,6 @@ excerpt: Bootstrapping the project and the basic API functionality to save our f
     <li><a href="/blog/2017/12/23/phoenix-elm-landing-page-pt-2/">Building the landing page UI and the basic Elm subscription form</a></li>
     <li><a href="/blog/2018/01/06/phoenix-elm-landing-page-pt-3/">Adding Google reCAPTCHA support to avoid spambots</a></li>
   </ol>
-
   <a href="https://github.com/bigardone/phoenix-and-elm-landing-page" target="_blank"><i class="fa fa-github"></i> Source code</a>
 </div>
 

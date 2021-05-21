@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
   "dependencies": {
+    "@fontsource/fira-code": "^4.3.0",
+    "@fontsource/montserrat": "^4.3.0",
     "disqus-react": "^1.0.11",
     "generate-template-files": "^3.0.0",
     "md5": "^2.3.0",
@@ -47,6 +49,8 @@
     "react-markdown": "^5.0.3",
     "react-syntax-highlighter": "^15.4.3",
     "react-typography": "^0.16.19",
+    "rehype-raw": "^5.1.0",
+    "rehype-sanitize": "^4.0.0",
     "remark-gfm": "^1.0.0",
     "tailwindcss": "^2.1.0"
   }

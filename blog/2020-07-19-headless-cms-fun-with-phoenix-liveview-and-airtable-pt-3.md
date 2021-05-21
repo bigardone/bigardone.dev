@@ -13,8 +13,7 @@ excerpt: Content rendering using Phoenix LiveView.
     <li><a href="/blog/2020/07/19/headless-cms-fun-with-phoenix-liveview-and-airtable-pt-3">Content rendering using Phoenix LiveView.</a></li>
     <li><a href="/blog/2020/07/27/headless-cms-fun-with-phoenix-liveview-and-airtable-pt-4">Adding a cache to the repository and broadcasting changes to the views..</a></li>
   </ol>
-
-  <a href="https://phoenixcms.herokuapp.com/" target="_blank" class="btn"><i class="fa fa-cloud"></i> Live demo</a>
+  <a href="https://phoenixcms.herokuapp.com/" target="_blank"><i class="fa fa-cloud"></i> Live demo</a>
   <a href="https://github.com/bigardone/phoenix-cms" target="_blank"><i class="fa fa-github"></i> Source code</a>
 </div>
 
@@ -248,8 +247,8 @@ As we have three different content types (`hero`, `text_and_image`, and `feature
   <div class="hero-body">
     <div class="container">
       <header class="hero__header">
-        <h1 class="title is-1 mb-6"><%= @content.title %></h1>
-        <p class="subtitle is-3 mb-6"><%= @content.content %></p>
+        <h1 class="mb-6 title is-1"><%= @content.title %></h1>
+        <p class="mb-6 subtitle is-3"><%= @content.content %></p>
       </header>
       <figure class="image">
         <img class="" src="<%= @content.image %>" alt="Placeholder image">

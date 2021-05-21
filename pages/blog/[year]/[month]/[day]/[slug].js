@@ -6,11 +6,11 @@ import matter from 'gray-matter';
 import path from 'path';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
+import rehypeRaw from 'rehype-raw';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import nord from 'react-syntax-highlighter/dist/cjs/styles/hljs/nord';
 import PostMeta from '../../../../../components/postMeta';
 import Share from '../../../../../components/share';
-import Tags from '../../../../../components/tags';
 import {
   filenameToParams, Config, formatDate, calculateReadingTime, slugToPath,
 } from '../../../../../src/pageUtils';
@@ -19,6 +19,7 @@ const CodeBlock = ({ language, value }) => (
   <SyntaxHighlighter
     language={language}
     style={nord}
+    customStyle={{ fontFamily: 'Fira Code' }}
   >
     {value}
   </SyntaxHighlighter>
@@ -33,10 +34,10 @@ export default function Post({ post }) {
   const url = `https://blog.talentoit.org/${slug}`;
 
   return (
-    <section className="mx-auto prose prose-purple lg:prose-lg">
+    <section className="mx-auto mt-20 font-sans prose prose-purple">
       <header className="mb-10">
-        <h1 className="mb-4 text-6xl font-extrabold">{title}</h1>
-        <div className="mb-4 text-2xl text-gray-500">{excerpt}</div>
+        <h1 className="mb-4 font-black">{title}</h1>
+        <div className="mb-4 text-xl text-gray-500">{excerpt}</div>
         <div className="flex items-center justify-between">
           <PostMeta
             date={date}
@@ -54,17 +55,9 @@ export default function Post({ post }) {
           plugins={[gfm]}
           source={content}
           renderers={{ code: CodeBlock }}
+          rehypePlugins={[rehypeRaw]}
         />
       </article>
-      {/* <DiscussionEmbed */}
-      {/*   shortname="talentoit" */}
-      {/*   config={{ */}
-      {/*     url, */}
-      {/*     identifier: slug, */}
-      {/*     title, */}
-      {/*     language: 'es_ES', */}
-      {/*   }} */}
-      {/* /> */}
     </section>
   );
 }

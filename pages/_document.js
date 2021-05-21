@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';

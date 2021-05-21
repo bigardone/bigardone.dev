@@ -2,15 +2,27 @@
 /* eslint-disable react/button-has-type */
 import { useState } from 'react';
 import cn from 'classnames';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 export default function Header() {
   const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
+  const router = useRouter();
 
   return (
-    <header className="w-full border-b border-gray-100">
-      <div className="flex flex-wrap items-center justify-between px-4 py-6 mx-auto lg:container md:flex-no-wrap md:px-6">
+    <header className="w-full max-w-6xl mx-auto">
+      <div className="flex flex-wrap items-center justify-between py-6 mx-auto lg:container md:flex-no-wrap">
         <div className="flex items-center">
-          <a className="font-extrabold text-purple-800 hover:text-purple-600 transition-colors" href="/">bigardone.dev</a>
+          <a className="font-extrabold text-purple-800 hover:text-purple-600 transition-colors" href="/">
+            <Image
+              src="/images/logo.svg"
+              width={70}
+              height={50}
+              priority
+              alt="bigardone.dev"
+              unoptimized
+            />
+          </a>
         </div>
 
         <button
@@ -35,10 +47,19 @@ export default function Header() {
         >
           {[
             { title: 'Home', route: '/' },
-            { title: 'About', route: '/about' },
+            { title: 'Articles', route: '/blog' },
           ].map(({ route, title }) => (
             <li className="mt-3 md:mt-0 md:ml-6" key={title}>
-              <a href={route} className="block hover:text-purple-600 transition-colors">{title}</a>
+              <a
+                href={route}
+                className={cn({
+                  'block font-sans font-black text-black hover:text-purple-600 transition-colors': true,
+                  'text-purple-900': route === router.asPath,
+                })}
+              >
+                {title}
+
+              </a>
             </li>
           ))}
         </ul>
