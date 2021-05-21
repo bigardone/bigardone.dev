@@ -5,19 +5,12 @@ import '@fontsource/montserrat';
 import '@fontsource/montserrat/600.css';
 import '../css/index.css';
 import Head from 'next/head';
-import ReactGA from 'react-ga';
-import CookieConsent from 'react-cookie-consent';
 import { React } from 'react';
 import Layout from '../components/layout';
 import { Config } from '../src/pageUtils';
 
 function MyApp({ Component, pageProps }) {
   const title = pageProps.title ? pageProps.title : Config.title;
-
-  if (typeof window !== 'undefined') {
-    ReactGA.initialize('UA-37802122-1');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }
 
   return (
     <Layout>
@@ -106,36 +99,6 @@ function MyApp({ Component, pageProps }) {
       </Head>
 
       <Component {...pageProps} />
-
-      <CookieConsent
-        location="bottom"
-        buttonText="Aceptar"
-        cookieName="cookieConsent"
-        style={{ background: '#E5E7EB', color: '#374151', fontSize: '0.85rem' }}
-        buttonStyle={{
-          background: 'transparent',
-          border: '1px solid #e74c3c',
-          color: '#e74c3c',
-        }}
-        expires={150}
-      >
-        This site uses its own and third-party cookies to improve your browsing experience and perform analytical tasks.
-        {' '}
-        <a
-          aria-label="learn more about cookies"
-          role="button"
-          tabIndex="0"
-          className="cc-link"
-          href="https://cookiesandyou.com"
-          rel="noopener noreferrer nofollow"
-          target="_blank"
-          style={{
-            color: '#e74c3c', textDecoration: 'underline',
-          }}
-        >
-          Learn more
-        </a>
-      </CookieConsent>
     </Layout>
   );
 }
