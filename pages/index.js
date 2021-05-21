@@ -6,12 +6,14 @@ import {
   filenameToSlug, formatDate, calculateReadingTime,
 } from '../src/pageUtils';
 import PostCard from '../components/postCard';
+import ProjectCard from '../components/projectCard';
 import Heading from '../components/heading';
+import projects from '../data/projects';
 
 
-export default function IndexPage({ posts }) {
+export default function IndexPage({ latestArticles, latestProjects }) {
   return (
-    <div className="py-20 font-sans">
+    <div className="mt-20 font-sans">
       <section className="w-full max-w-6xl mx-auto grid grid-flow-row grid-cols-2 gap-4">
         <div className="text-xl leading-relaxed text-gray-700">
           <p className="font-black">
@@ -33,8 +35,6 @@ export default function IndexPage({ posts }) {
             {' '}
             <strong>Elm</strong>
           , and sharing my coding experience in this blog.
-            <br />
-            Welcome to my site.
           </p>
         </div>
         <div className="text-right">
@@ -57,7 +57,7 @@ export default function IndexPage({ posts }) {
           <Heading text="Latest articles" />
           <div className="grid grid-flow-row grid-cols-2 gap-8">
             {
-              posts.map(({ frontmatter, slug }) => (
+              latestArticles.map(({ frontmatter, slug }) => (
                 <PostCard key={slug} frontmatter={frontmatter} slug={slug} />
               ))
             }
@@ -72,9 +72,16 @@ export default function IndexPage({ posts }) {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#F5F3FF" fillOpacity="1" d="M0,192L30,202.7C60,213,120,235,180,240C240,245,300,235,360,218.7C420,203,480,181,540,160C600,139,660,117,720,112C780,107,840,117,900,138.7C960,160,1020,192,1080,181.3C1140,171,1200,117,1260,122.7C1320,128,1380,192,1410,224L1440,256L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z" />
       </svg>
-      <section className="py-16">
+      <section>
         <div className="max-w-6xl mx-auto">
           <Heading text="Latest projects" />
+          <div className="grid grid-flow-row grid-cols-3 gap-8">
+            {
+              latestProjects.map(project => (
+                <ProjectCard key={project.name} {...project} />
+              ))
+            }
+          </div>
         </div>
       </section>
     </div>
@@ -86,7 +93,7 @@ export async function getStaticProps() {
   try {
     const files = fs.readdirSync(`${process.cwd()}/blog`);
 
-    const posts = files.map((filename) => {
+    const latestArticles = files.map((filename) => {
       const markdownWithMetadata = fs
         .readFileSync(`blog/${filename}`)
         .toString();
@@ -108,11 +115,12 @@ export async function getStaticProps() {
 
     return {
       props: {
-        posts,
+        latestArticles,
+        latestProjects: projects,
         title: 'Home',
       },
     };
   } catch (error) {
-    return { props: { posts: [] } };
+    return { props: { latestArticles: [], latestProjects: [] } };
   }
 }

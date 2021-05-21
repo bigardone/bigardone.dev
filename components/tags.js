@@ -1,4 +1,4 @@
-export default function Tags({ tags }) {
+export default function Tags({ tags, inverted }) {
   let taglist = [];
 
   if (typeof tags === 'string') taglist = tags.split(',');
