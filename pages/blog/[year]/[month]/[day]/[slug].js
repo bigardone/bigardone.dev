@@ -34,10 +34,10 @@ export default function Post({ post }) {
   const url = `https://blog.talentoit.org/${slug}`;
 
   return (
-    <section className="mx-auto prose prose-purple lg:prose-lg">
+    <section className="mx-auto mt-20 font-sans prose prose-purple">
       <header className="mb-10">
-        <h1 className="mb-4 text-6xl font-extrabold">{title}</h1>
-        <div className="mb-4 text-2xl text-gray-500">{excerpt}</div>
+        <h1 className="mb-4 font-black">{title}</h1>
+        <div className="mb-4 text-xl text-gray-500">{excerpt}</div>
         <div className="flex items-center justify-between">
           <PostMeta
             date={date}

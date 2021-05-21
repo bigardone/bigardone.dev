@@ -16,8 +16,8 @@ export default function Header() {
           <a className="font-extrabold text-purple-800 hover:text-purple-600 transition-colors" href="/">
             <Image
               src="/images/logo.svg"
-              width={100}
-              height={60}
+              width={70}
+              height={50}
               priority
               alt="bigardone.dev"
               unoptimized

@@ -16,7 +16,7 @@ export default function ProjectCard({
   }
   return (
     <article key={name} className="relative rounded-lg box-content rbg-white shadow-custom hover:shadow-custom-hover duration-300 transition-shadow">
-      <div className="relative bg-purple-400 rounded-t-lg h-44">
+      <div className="relative overflow-hidden bg-purple-400 rounded-t-lg h-44">
         <Image
           src={image}
           layout="fill"
