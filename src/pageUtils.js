@@ -26,6 +26,7 @@ export const Config = {
   locale: 'en',
   author: 'Ricardo Garcia Vega',
   authorEmail: 'bigardone@gmail.com',
+  metaImage: 'https://bigardone.dev/images/meta.png',
 };
 
 const formatOptions = { year: 'numeric', month: 'short', day: 'numeric' };
