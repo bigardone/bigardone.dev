@@ -11,15 +11,15 @@
   color: #9CA3AF !important;
 }
 
-.prose .index {
+.prose-purple .index {
   @apply p-8 mb-8 text-sm rounded-lg bg-gray-50;
 }
 
-.prose .index p {
+.prose-purple .index p {
   @apply mt-0;
 }
 
-.prose .btn {
+.prose-purple .btn {
   @apply px-4 py-3 text-xs text-white no-underline uppercase bg-purple-500 rounded-lg transition-colors hover:bg-purple-800;
 }
 

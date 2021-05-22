@@ -10,10 +10,10 @@ import Heading from '../components/heading';
 
 export default function IndexPage({ posts }) {
   return (
-    <section className="py-20 font-sans">
+    <section className="px-4 py-12 font-sans md:py-32 md:px-0">
       <div className="max-w-6xl mx-auto">
         <Heading text="Articles" />
-        <div className="grid grid-flow-row grid-cols-2 gap-8">
+        <div className="grid grid-flow-row grid-cols-1 md:grid-cols-2 gap-8">
           {
             posts.map(({ frontmatter, slug }) => (
               <PostCard key={slug} frontmatter={frontmatter} slug={slug} />
