@@ -15,8 +15,8 @@ export default function Footer() {
           <a href="https://github.com/bigardone" target="_blank>">
             <Image
               src="/images/github.svg"
-              width={18}
-              height={18}
+              width={24}
+              height={24}
               priority
               alt="bigardone.dev"
               unoptimized
@@ -25,8 +25,8 @@ export default function Footer() {
           <a href="https://twitter.com/bigardone" target="_blank>">
             <Image
               src="/images/twitter.svg"
-              width={18}
-              height={18}
+              width={24}
+              height={24}
               priority
               alt="bigardone.dev"
               unoptimized
@@ -35,8 +35,8 @@ export default function Footer() {
           <a href="https://www.linkedin.com/in/ricardogarciavega/" target="_blank>">
             <Image
               src="/images/linkedin.svg"
-              width={18}
-              height={18}
+              width={24}
+              height={24}
               priority
               alt="bigardone.dev"
               unoptimized

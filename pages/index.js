@@ -74,7 +74,7 @@ export default function IndexPage({ latestArticles, latestProjects }) {
       </svg>
       <section>
         <div className="max-w-6xl mx-auto">
-          <Heading text="Latest projects" />
+          <Heading text="Recent projects" />
           <div className="grid grid-flow-row grid-cols-3 gap-8">
             {
               latestProjects.map(project => (

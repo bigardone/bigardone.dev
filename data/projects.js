@@ -1,6 +1,14 @@
 export default
 [
   {
+    name: 'bigardone.dev',
+    description: 'My new website and blog',
+    image: '/images/projects/bigardone.jpg',
+    repoUrl: 'https://github.com/bigardone/bigardone.dev',
+    projectUrl: 'https://bigardone.dev/',
+    tags: ['next.js', 'tailwindcss'],
+  },
+  {
     name: 'Talento IT Blog',
     description: 'New static blog for Talento IT.',
     image: '/images/projects/blog-talentoit.jpg',
@@ -47,6 +55,14 @@ export default
     repoUrl: 'https://github.com/bigardone/phoenix-liveview-ant-farm',
     projectUrl: 'https://github.com/bigardone/phoenix-liveview-ant-farm',
     tags: ['elixir', 'phoenix', 'liveview'],
+  },
+  {
+    name: 'phxsockets.io',
+    description: 'Phoenix sockets visual client',
+    image: '/images/projects/phxsockets.jpg',
+    repoUrl: '',
+    projectUrl: 'http://phxsockets.io/',
+    tags: ['elm'],
   },
   {
     name: 'Talento IT',
