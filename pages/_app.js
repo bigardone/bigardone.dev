@@ -11,6 +11,7 @@ import { Config } from '../src/pageUtils';
 
 function MyApp({ Component, pageProps }) {
   const title = pageProps.title ? pageProps.title : Config.title;
+  const image = pageProps.post ? pageProps.post.frontmatter.image : Config.metaImage;
 
   return (
     <Layout>
@@ -32,15 +33,12 @@ function MyApp({ Component, pageProps }) {
         />
         <meta property="og:locale" content={Config.locale} key="og:locale" />
         <meta property="og:site_name" content={Config.site_name} key="og:site_name" />
+        <meta property="og:image" content={image} key="og:image" />
+
 
         {pageProps.post && (
           <>
             <meta property="og:type" content="article" key="og:type" />
-            <meta
-              property="og:image"
-              content={pageProps.post.frontmatter.image}
-              key="og:image"
-            />
             <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
             <meta
               property="twitter:image"
@@ -79,7 +77,7 @@ function MyApp({ Component, pageProps }) {
               "name": "${Config.author}"
             },
             "headline": "${pageProps.title} | ${Config.site_name}",
-            "image": ["${pageProps.post.frontmatter.image}"],
+            "image": ["${image}"],
             "datePublished": "${pageProps.post.frontmatter.date}",
             "dateModified": "${pageProps.post.frontmatter.date}",
             "mainEntityOfPage": {

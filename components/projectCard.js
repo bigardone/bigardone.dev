@@ -14,7 +14,7 @@ export default function ProjectCard({
           href={projectUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row block text-sm text-gray-400 align-middle gap-1 hover:underline"
+          className="flex flex-row block text-sm text-gray-400 align-middle gap-1 hover:underline hover:text-purple-900"
         >
           <Image
             src="/images/github.svg"
@@ -31,8 +31,8 @@ export default function ProjectCard({
     );
   }
   return (
-    <article key={name} className="relative rounded-lg box-content rbg-white shadow-custom hover:shadow-custom-hover duration-300 transition-shadow">
-      <div className="relative overflow-hidden bg-purple-400 border-b border-gray-100 rounded-t-lg h-44">
+    <article key={name} className="relative border border-gray-100 rounded-lg box-content rbg-white shadow-custom hover:shadow-custom-hover duration-300 transition-shadow">
+      <div className="relative overflow-hidden bg-purple-400 rounded-t-lg h-44">
         <Image
           src={image}
           layout="fill"
@@ -47,7 +47,7 @@ export default function ProjectCard({
       <div className="p-8">
         <header className="mb-4">
           <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-            <h2 className="mb-1 font-sans text-xl font-black hover:underline hover:text-purple-1000">
+            <h2 className="mb-1 font-sans text-xl font-black hover:underline hover:text-purple-900">
               {name}
             </h2>
           </a>
