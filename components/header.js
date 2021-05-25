@@ -10,8 +10,8 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="w-full max-w-6xl px-4 mx-auto md:px-0">
-      <div className="flex flex-row items-center justify-between py-6 mx-auto lg:container md:flex-no-wrap">
+    <header className="w-full max-w-6xl px-4 mx-auto">
+      <div className="flex flex-row items-center justify-between py-6 mx-auto md:flex-no-wrap">
         <div className="flex-1">
           <a className="" href="/">
             <Image

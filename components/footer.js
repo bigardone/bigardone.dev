@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="pt-2 pb-6 text-gray-600 md:pb-12 md:pt-0 bg-gray-50">
-      <div className="flex flex-row justify-between w-full max-w-6xl px-4 mx-auto text-sm align-middle md:px-0">
+      <div className="flex flex-row justify-between w-full max-w-6xl px-4 mx-auto text-sm align-middle">
         <div className="w-3/5 md:w-9/12">
           bigardone.dev ©
           {' '}

@@ -11,7 +11,7 @@ export default function PostCard({
   if (!title) return false;
 
   return (
-    <article key={title} className="p-8 bg-white rounded-lg cursor-pointer shadow-custom hover:shadow-custom-hover duration-300 transition-shadow">
+    <article key={title} className="p-8 bg-white rounded-lg cursor-pointer post-card shadow-custom hover:shadow-custom-hover duration-300 transition-shadow">
       <a href={`/blog/${slug}`}>
         <header className="mb-5">
           <h2 className="mb-6 font-sans text-xl font-black hover:underline hover:text-purple-900">
