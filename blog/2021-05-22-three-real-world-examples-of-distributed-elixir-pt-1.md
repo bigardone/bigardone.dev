@@ -3,7 +3,7 @@ title: "Three real-world examples of distributed Elixir (pt. 1)"
 excerpt: "A gentle introduction to distributed Elixir."
 date: "2021-05-22"
 tags: elixir, phoenix
-image: /images/blog/2021-05-22-three-real-world-examples-of-distributed-elixir-pt-1/post-meta.png
+image: "https://bigardone.dev/images/blog/2021-05-22-three-real-world-examples-of-distributed-elixir-pt-1/post-meta.png"
 ---
 
 <div class="index">

@@ -11,7 +11,7 @@ import { Config } from '../src/pageUtils';
 
 function MyApp({ Component, pageProps }) {
   const title = pageProps.title ? pageProps.title : Config.title;
-  const image = pageProps.post ? pageProps.post.frontmatter.image : Config.metaImage;
+  const image = pageProps.post && pageProps.post.frontmatter.image ? pageProps.post.frontmatter.image : Config.metaImage;
 
   return (
     <Layout>
@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
             <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
             <meta
               property="twitter:image"
-              content={pageProps.post.frontmatter.image}
+              content={image}
               key="twitter:image"
             />
             <meta
