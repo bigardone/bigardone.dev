@@ -15,12 +15,12 @@ function getDay() {
 
 generateTemplateFiles([
   {
-    option: 'Crear un nuevo post',
+    option: 'New post',
     defaultCase: '(pascalCase)',
     entry: {
       folderPath: './tools/templates/__year__-__month__-__day__-__title__.md',
     },
-    stringReplacers: [{ question: 'Inserta el título del nuevo post', slot: '__title__' }],
+    stringReplacers: [{ question: 'Title?', slot: '__title__' }],
     dynamicReplacers: [
       { slot: '__year__', slotValue: getYear() },
       { slot: '__month__', slotValue: getMonth() },
