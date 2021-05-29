@@ -71,14 +71,6 @@ true
 iex(n1@127.0.0.1)2>
 ```
 
-And the same from `n2`:
-
-```elixir
-iex(n2@127.0.0.1)1> Node.connect :"n1@127.0.0.1"
-true
-iex(n2@127.0.0.1)2>
-```
-
 To confirm that everything went fine, let's run [Node.list/0] on each node, which returns the list of nodes to which the current instance has connected:
 
 ```elixir
