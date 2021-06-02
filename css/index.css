@@ -23,8 +23,12 @@ html {
   @apply mt-0;
 }
 
+.prose-purple .btn-wrapper {
+  @apply flex my-12 gap-x-8;
+}
+
 .prose-purple .btn {
-  @apply px-4 py-3 text-xs text-white no-underline uppercase bg-purple-500 rounded-lg transition-colors hover:bg-purple-800;
+  @apply px-12 py-4 text-base font-black text-center text-purple-900 bg-purple-200 rounded-lg shadow-custom hover:underline hover:shadow-custom-hover;
 }
 
 .post-card:hover h2 {
