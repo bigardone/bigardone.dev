@@ -25,7 +25,7 @@ The tricky part of making a process unique across the cluster is registering it 
 
 <div class="btn-wrapper">
   <a href="https://github.com/bigardone/distributed-elixir-examples/tree/master/03_global_background_job" target="_blank" class="btn">
-    <i class="fa fa-github"></i> Source code if this example
+    <i class="fa fa-github"></i> Source code of this example
   </a>
 </div>
 
@@ -277,7 +277,7 @@ If you play around starting new nodes, stopping them, or killing the `DatabaseCl
 
 <div class="btn-wrapper">
   <a href="https://github.com/bigardone/distributed-elixir-examples/tree/master/04_swarm_background_job" target="_blank" class="btn">
-    <i class="fa fa-github"></i> Source code if this example
+    <i class="fa fa-github"></i> Source code of this example
   </a>
 </div>
 
@@ -638,7 +638,7 @@ If you play around with starting new nodes, stopping the current one, and killin
 
 <div class="btn-wrapper">
   <a href="https://github.com/bigardone/distributed-elixir-examples/tree/master/05_horde_background_job" target="_blank" class="btn">
-    <i class="fa fa-github"></i> Source code if this example
+    <i class="fa fa-github"></i> Source code of this example
   </a>
 </div>
 
