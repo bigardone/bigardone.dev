@@ -10,6 +10,7 @@ image: "https://bigardone.dev/images/blog/2021-05-22-three-real-world-examples-o
   <p>This post belongs to the <strong>Three real-world examples of distributed Elixir</strong> series.</p>
   <ol>
     <li><a href="/blog/2021/05/22/three-real-world-examples-of-distributed-elixir-pt-1">A gentle introduction to distributed Elixir.</a></li>
+    <li><a href="/blog/2021/06/06/three-real-world-examples-of-distributed-elixir-pt-2">The tale of the periodic singleton process and the three different global registries.</a></li>
     <li>Coming soon...</li>
   </ol>
   <a href="https://github.com/bigardone/distributed-elixir-examples" target="_blank"><i class="fa fa-github"></i> Source code</a>
@@ -335,7 +336,7 @@ Happy coding!
 
 
 <div class="btn-wrapper">
-  <a href="https://github.com/bigardone/phoenix-cms" target="_blank" class="btn"><i class="fa fa-github"></i> Source code</a>
+  <a href="https://github.com/bigardone/distributed-elixir-examples" target="_blank" class="btn"><i class="fa fa-github"></i> Source code</a>
 </div>
 
 

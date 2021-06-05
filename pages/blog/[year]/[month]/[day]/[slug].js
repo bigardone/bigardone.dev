@@ -34,7 +34,7 @@ export default function Post({ post }) {
   const url = `https://blog.talentoit.org/${slug}`;
 
   return (
-    <section className="px-4 mx-auto mt-16 font-sans md:mt-32 prose prose-purple md:px-0">
+    <section className="px-4 mx-auto mt-16 font-sans md:mt-32 prose md:prose-lg prose-purple md:px-0">
       <header className="mb-10">
         <h1 className="mb-4 font-black">{title}</h1>
         <div className="mb-4 text-xl text-gray-500">{excerpt}</div>
