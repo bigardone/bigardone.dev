@@ -72,7 +72,7 @@ function MyApp({ Component, pageProps }) {
               "@type": "Organization",
               "logo": {
                 "@type": "ImageObject",
-                "url": "${Config.url}/blog-logo.svg"
+                "url": "${Config.url}/images/logo.svg"
               },
               "name": "${Config.author}"
             },
