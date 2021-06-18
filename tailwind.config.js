@@ -12,6 +12,7 @@ module.exports = {
     boxShadow: {
       custom: '0px 8px 16px 0px rgb(0 0 0 / 3%)',
       'custom-hover': '0px 8px 16px 0px rgb(0 0 0 / 6%)',
+      lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
     },
     extend: {
       colors: {

@@ -2,7 +2,7 @@
 title: "Three real-world examples of distributed Elixir (pt. 2)"
 excerpt: "The tale of the periodic singleton process and the three different global registries."
 date: "2021-06-06"
-tags:
+tags: elixir
 image: "https://bigardone.dev/images/blog/2021-06-06-three-real-world-examples-of-distributed-elixir-pt-2/post-meta.png"
 ---
 
@@ -11,6 +11,7 @@ image: "https://bigardone.dev/images/blog/2021-06-06-three-real-world-examples-o
   <ol>
     <li><a href="/blog/2021/05/22/three-real-world-examples-of-distributed-elixir-pt-1">A gentle introduction to distributed Elixir.</a></li>
     <li><a href="/blog/2021/06/06/three-real-world-examples-of-distributed-elixir-pt-2">The tale of the periodic singleton process and the three different global registries.</a></li>
+    <li><a href="/blog/2021/06/18/three-real-world-examples-of-distributed-elixir-pt-3">The distributed download requester and progress tracker.</a></li>
     <li>Coming soon...</li>
   </ol>
   <a href="https://github.com/bigardone/distributed-elixir-examples" target="_blank"><i class="fa fa-github"></i> Source code</a>
@@ -933,7 +934,7 @@ iex(n3@mbp)7> HordeBackgroundJob.DatabaseCleaner.Starter.whereis
 
 The process dies in its current node but gets restarted thanks to Horde's supervisor, and most importantly, the registry does not lose track of its new `PID`, yay!
 
-## Foreword
+## Conclusion
 
 In this part of the series, we have seen how to implement a periodic singleton process thanks to three different global registries. Using `:global` has been the easiest and more straightforward one of the three. However, it is also known for not recovering correctly after netsplits, thus having alternatives like `swarm` or `horde`. Between these last two, `swarm` looks very promising, especially its handoff mechanism. However, the amount of issues and lack of activity in its repo makes it not very reliable in the end. Finally, `horde`, although having to build some boilerplate to use it, feels like the perfect balance between the former two. What do you think?
 
