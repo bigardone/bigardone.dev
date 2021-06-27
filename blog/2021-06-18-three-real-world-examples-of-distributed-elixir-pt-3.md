@@ -12,7 +12,7 @@ image: "https://bigardone.dev/images/blog/2021-06-18-three-real-world-examples-o
     <li><a href="/blog/2021/05/22/three-real-world-examples-of-distributed-elixir-pt-1">A gentle introduction to distributed Elixir.</a></li>
     <li><a href="/blog/2021/06/06/three-real-world-examples-of-distributed-elixir-pt-2">The tale of the periodic singleton process and the three different global registries.</a></li>
     <li><a href="/blog/2021/06/18/three-real-world-examples-of-distributed-elixir-pt-3">The distributed download requester and progress tracker.</a></li>
-    <li>Coming soon...</li>
+    <li><a href="/blog/2021/06/27/three-real-world-examples-of-distributed-elixir-pt-4">The distributed application version monitor.</a></li>
   </ol>
   <a href="https://github.com/bigardone/distributed-elixir-examples" target="_blank"><i class="fa fa-github"></i> Source code</a>
 </div>
