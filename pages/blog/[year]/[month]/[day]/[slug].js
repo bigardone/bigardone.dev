@@ -1,5 +1,4 @@
 /* eslint-disable import/no-extraneous-dependencies */
-// import { DiscussionEmbed } from 'disqus-react';
 import fs from 'fs';
 import gfm from 'remark-gfm';
 import matter from 'gray-matter';

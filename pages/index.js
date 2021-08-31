@@ -20,23 +20,23 @@ export default function IndexPage({ latestArticles, latestProjects }) {
             Hi, how are you doing? I'm Ricardo.
           </p>
           <h1 className="my-8 text-4xl font-black text-purple-1000">
-            I'm a full-stack web developer.
+            I'm a software engineer.
           </h1>
           <p className="mb-6">
             I love building
             web applications using modern technologies such as
             {' '}
             <strong>Elixir</strong>
-          ,
+            ,
             {' '}
             <strong>Phoenix</strong>
             ,
             {' '}
-             and
+            and
             {' '}
             <strong>Elm</strong>
             {' '}
-           and sharing my coding experience in this blog.
+            and sharing my coding experience in this blog.
           </p>
           <p>
             Feel free to read any of my
