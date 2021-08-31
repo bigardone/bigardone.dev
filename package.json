@@ -22,7 +22,6 @@
   "dependencies": {
     "@fontsource/fira-code": "^4.3.0",
     "@fontsource/montserrat": "^4.3.0",
-    "disqus-react": "^1.0.11",
     "generate-template-files": "^3.0.0",
     "md5": "^2.3.0",
     "react-mailchimp-subscribe": "^2.1.3"
@@ -35,7 +34,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
-    "next": "^10.1.0",
+    "next": "^11.1.0",
     "postcss": "^8.2.0",
     "postcss-100vh-fix": "1.0.2",
     "postcss-flexbugs-fixes": "5.0.2",

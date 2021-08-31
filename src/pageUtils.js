@@ -21,7 +21,7 @@ export function slugToPath(year, month, day, slug) {
 export const Config = {
   site_name: 'bigardone.dev',
   title: 'bigardone.dev',
-  description: 'I\'m Ricardo, a full- stack web developer who loves building web applications using modern technologies such as Elixir, Phoenix and Elm, and sharing my coding experience in this blog.',
+  description: 'I\'m Ricardo, a software engineer who loves building web applications using modern technologies such as Elixir, Phoenix and Elm, and sharing my coding experience in this blog.',
   url: 'https://bigardone.dev',
   locale: 'en',
   author: 'Ricardo Garcia Vega',
