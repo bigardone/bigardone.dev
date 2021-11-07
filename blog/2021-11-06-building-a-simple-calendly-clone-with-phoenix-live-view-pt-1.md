@@ -3,7 +3,7 @@ title: "Building a simple Calendly clone with Phoenix LiveView (pt. 1)"
 excerpt: "Introduction."
 date: "2021-11-06"
 tags: elixir, phoenix, liveview
-image: ""
+image: "https://bigardone.dev/images/blog/2021-11-06-building-a-simple-calendly-clone-with-phoenix-live-view-pt-1/post-meta.png"
 ---
 
 <div class="index">
