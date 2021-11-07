@@ -23,6 +23,9 @@ module.exports = {
       typography: theme => ({
         DEFAULT: {
           css: {
+            h1: {
+              lineHeight: '1.75rem',
+            },
             code: {
               backgroundColor: theme('colors.gray.100'),
               padding: '0.3rem',
@@ -32,6 +35,13 @@ module.exports = {
             },
             'code:before': {
               content: '""',
+            },
+          },
+        },
+        lg: {
+          css: {
+            h1: {
+              lineHeight: '3.25rem',
             },
           },
         },
