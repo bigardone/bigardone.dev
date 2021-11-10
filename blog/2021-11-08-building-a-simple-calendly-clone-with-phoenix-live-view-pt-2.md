@@ -47,7 +47,7 @@ mix phx.new calendlex --no-gettext --no-dashboard --no-mailer
 We are removing **gettext**, the **live dashboard**, and the **mailer** since we will not use them in this series. After the generator finishes scaffolding all the project files and installing all the initial dependencies, let's make the necessary changes to support Tailwind CSS.
 
 ## Adding Tailwind CSS support
-I've been using **Tailwind CSS** for quite some time, and I couldn't be happier with it.  However, since **Phoenix** has removed **npn** and **webpack**, adding extra front-end dependencies, such as **Tailwind CSS**, needs some additional changes in the project. After doing a quick search over the Internet, I found this [great post] from [Sergio Tapia] that explains how to achieve this task in sevent simple steps. Here's the TL;DR version:
+I've been using **Tailwind CSS** for quite some time, and I couldn't be happier with it.  However, since **Phoenix** has removed **npn** and **webpack**, adding extra front-end dependencies, such as **Tailwind CSS**, needs some additional changes in the project. After doing a quick search over the Internet, I found this [great post] from [Sergio Tapia] that explains how to achieve this task in seven simple steps. Here's the TL;DR version:
 
 ### 1. Install Tailwind CSS
 
