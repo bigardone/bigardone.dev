@@ -509,7 +509,7 @@ for event_type <- event_types do
 end
 ```
 
-Let's run the proper mix tast to create the data:
+Let's run the proper mix task to create the data:
 
 ```plaintext
 ❯ mix run priv/repo/seeds.exs
