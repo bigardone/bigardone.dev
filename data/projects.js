@@ -1,6 +1,14 @@
 export default
 [
   {
+    name: 'Calendlex',
+    description: 'Calendly clone with Phoenix LiveView',
+    image: '/images/projects/calendlex.jpg',
+    repoUrl: 'https://github.com/bigardone/calendlex',
+    projectUrl: 'https://calendlex.herokuapp.com/',
+    tags: ['elixir', 'phoenix', 'liveview', 'tailwindcss'],
+  },
+  {
     name: 'bigardone.dev',
     description: 'My new website and blog',
     image: '/images/projects/bigardone.jpg',
@@ -10,7 +18,7 @@ export default
   },
   {
     name: 'Talento IT Blog',
-    description: 'New static blog for Talento IT.',
+    description: 'New static blog for Talento IT',
     image: '/images/projects/blog-talentoit.jpg',
     repoUrl: '',
     projectUrl: 'https://blog.talentoit.org/',

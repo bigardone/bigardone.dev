@@ -11,7 +11,7 @@ export default function ProjectCard({
     repoLink = (
       <div>
         <a
-          href={projectUrl}
+          href={repoUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-row block text-sm text-gray-400 align-middle gap-1 hover:underline hover:text-purple-900"
