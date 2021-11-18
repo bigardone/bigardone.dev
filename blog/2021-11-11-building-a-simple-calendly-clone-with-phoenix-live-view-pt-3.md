@@ -49,7 +49,7 @@ config :calendlex,
 
 Now let's create the `:public` live session in the router file:
 
-```
+```elixir
 # ./lib/calendlex_web/router.ex
 
 defmodule CalendlexWeb.Router do

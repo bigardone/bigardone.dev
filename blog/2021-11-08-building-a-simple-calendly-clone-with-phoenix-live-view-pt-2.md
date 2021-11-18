@@ -18,7 +18,7 @@ image: "https://bigardone.dev/images/blog/2021-11-08-building-a-simple-calendly-
   <a href="https://calendlex.herokuapp.com/" target="_blank"><i class="fa fa-cloud"></i> Live demo</a>
 </div>
 
-In this part, we will generate our new project from scratch, using **Phoenix v0.16**. The most significant change of this version is the [removal of webpack and npm dependencies], relying on [esbuild] to build assets. Nevertheless, we will use [Tailwind CSS] for styling the HTML, so we will have to make some minor tweaks to the project's default configuration to support it. Finally, we will generate the migration files and schemas for the domain models. Let's get cracking!
+In this part, we will generate our new project from scratch, using **Phoenix v1.6**. The most significant change of this version is the [removal of webpack and npm dependencies], relying on [esbuild] to build assets. Nevertheless, we will use [Tailwind CSS] for styling the HTML, so we will have to make some minor tweaks to the project's default configuration to support it. Finally, we will generate the migration files and schemas for the domain models. Let's get cracking!
 
 ## Generating the project
 First of all, let's ensure that we have the latest version of the Phoenix project generator:
