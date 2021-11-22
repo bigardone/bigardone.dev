@@ -2,7 +2,7 @@
 title: "Building a simple Calendly clone with Phoenix LiveView (pt. 3)"
 excerpt: "The event type selection page."
 date: "2021-11-11"
-tags:
+tags: elixir, phoenix, liveview
 image: "https://bigardone.dev/images/blog/2021-11-11-building-a-simple-calendly-clone-with-phoenix-live-view-pt-3/post-meta.png"
 ---
 
