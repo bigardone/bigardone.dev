@@ -101,6 +101,9 @@ Let's start by editing the `PageLive` module we created in the previous part:
 defmodule CalendlexWeb.PageLive do
   use CalendlexWeb, :live_view
 
+  # We will implement this module in a minute...
+  alias CalendlexWeb.Components.EventType
+
   def mount(_params, _session, socket) do
     event_types = Calendlex.available_event_types()
 
@@ -150,7 +153,7 @@ The available function is pretty straightforward. It gets all the event types fr
     </header>
     <div class="mt-4 grid grid-cols-2 gap-x-6">
       <%= for event_type <- @event_types do %>
-        <EventType.event_type event_type={event_type} path={Routes.live_path(@socket, CalendlexWeb.EventTypeLive, event_type.slug)} />
+        <EventType.selector event_type={event_type} path={Routes.live_path(@socket, CalendlexWeb.EventTypeLive, event_type.slug)} />
       <% end %>
     </div>
   </div>
