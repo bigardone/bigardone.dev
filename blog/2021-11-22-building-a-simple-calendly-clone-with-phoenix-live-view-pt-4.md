@@ -3,7 +3,7 @@ title: "Building a simple Calendly clone with Phoenix LiveView (pt. 4)"
 excerpt: "Rendering the monthly calendar."
 date: "2021-11-22"
 tags: elixir, phoenix, liveview
-image: "https://bigardone.dev/images/blog/2021-11-22-building-a-simple-calendly-clone-with-phoenix-live-view-pt-3/post-meta.png"
+image: "https://bigardone.dev/images/blog/2021-11-22-building-a-simple-calendly-clone-with-phoenix-live-view-pt-4/post-meta.png"
 ---
 
 <div class="index">
