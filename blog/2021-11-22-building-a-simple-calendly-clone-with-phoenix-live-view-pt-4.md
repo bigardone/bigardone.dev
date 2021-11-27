@@ -6,6 +6,19 @@ tags: elixir, phoenix, liveview
 image: "https://bigardone.dev/images/blog/2021-11-22-building-a-simple-calendly-clone-with-phoenix-live-view-pt-3/post-meta.png"
 ---
 
+<div class="index">
+  <p>This post belongs to the <strong>Building a simple Calendly clone with Phoenix LiveView</strong> series.</p>
+  <ol>
+    <li><a href="/blog/2021/11/06/building-a-simple-calendly-clone-with-phoenix-live-view-pt-1">Introduction.</a></li>
+    <li><a href="/blog/2021/11/08/building-a-simple-calendly-clone-with-phoenix-live-view-pt-2">Generating the initial project and domain models.</a></li>
+    <li><a href="/blog/2021/11/11/building-a-simple-calendly-clone-with-phoenix-live-view-pt-3">The event type selection page.</a></li>
+    <li><a href="/blog/2021/11/22/building-a-simple-calendly-clone-with-phoenix-live-view-pt-4">Rendering the monthly calendar..</a></li>
+    <li>Coming soon...</li>
+  </ol>
+  <a href="https://github.com/bigardone/calendlex" target="_blank"><i class="fa fa-github"></i> Source code</a><br>
+  <a href="https://calendlex.herokuapp.com/" target="_blank"><i class="fa fa-cloud"></i> Live demo</a>
+</div>
+
 In the [last part] of the series, we implemented the initial page of the application, which lists all the available event types, letting the visitor select one and transition to the next page that we left empty. To do so, we took advantage of LiveView's features like **live sessions** and **function components**. In this part, we will start by implementing all the logic surrounding the empty `CalendlexWeb.EventTypeLive` live view. We will render a monthly calendar, letting the visitor navigate through the months, and selecting a date. Let's get cracking!
 
 ## Displaying the initial event type page
