@@ -3,7 +3,7 @@ title: "Building a simple Calendly clone with Phoenix LiveView (pt. 6)"
 excerpt: "Managing event types, part one."
 date: "2021-12-20"
 tags: elixir, phoenix, liveview
-image: "https://bigardone.dev/images/blog/2021-12-20-building-a-simple-calendly-clone-with-phoenix-live-view-pt-5/post-meta.png"
+image: "https://bigardone.dev/images/blog/2021-12-20-building-a-simple-calendly-clone-with-phoenix-live-view-pt-6/post-meta.png"
 ---
 
 In the [last part] of the series, we generated the available time slots for a given data and rendered them as clickable items in the calendar's live view. We also implemented the booking form, which schedules a new event for the selected event type, date, and time slot. In this part, we are going to start implementing the private side of our application, in which we will be able to manage the existing event types and create new ones. Let's get cracking!
