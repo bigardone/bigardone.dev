@@ -49,14 +49,6 @@ export default
     tags: ['elixir', 'phoenix'],
   },
   {
-    name: 'Que cocine Valentina',
-    description: 'Restaurant custom CMS and logo',
-    image: '/images/projects/quecocinevalentina.jpg',
-    repoUrl: '',
-    projectUrl: 'https://quecocinevalentina.es/',
-    tags: ['elixir', 'phoenix'],
-  },
-  {
     name: 'Phoenix LiveView Ant Farm',
     description: 'Concurrent ant farm with Elixir and Phoenix LiveView',
     image: '/images/projects/phoenix-liveview-ant-farm.jpg',
