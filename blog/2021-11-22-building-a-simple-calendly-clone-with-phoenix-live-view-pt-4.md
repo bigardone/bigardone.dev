@@ -210,12 +210,12 @@ defmodule CalendlexWeb.Live.InitAssigns do
 end
 ```
 
-We use [get_connect_params/1] to take the value from the socket's connection parameters and assign it to the socket. If `timezone` does not exist, we set the owner's time zone as the default value. Let's jump back to the `CalendlexWeb.EventTypeLive` and add the corresponding assigns that we need to build the calendar:
+We use [get_connect_params/1] to take the value from the socket's connection parameters and assign it to the socket. If `timezone` does not exist, we set the owner's time zone as the default value. Let's jump back to the `CalendlexWeb.EventTypeLive` module and add the corresponding assigns that we need to build the calendar:
 
 ```elixir
-# ./lib/calendlex/event_type/repo.ex
+# ./lib/calendlex_web/live/event_type_live.ex
 
-defmodule Calendlex.EventType.Repo do
+defmodule CalendlexWeb.EventTypeLive do
   alias Calendlex.{EventType, Repo}
 
   alias Timex.Duration
