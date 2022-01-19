@@ -410,6 +410,11 @@ It works like a charm, yay! In the next part, we will continue with event types 
 
 Happy coding!
 
+<div class="btn-wrapper">
+  <a href="https://calendlex.herokuapp.com/" target="_blank" class="btn"><i class="fa fa-cloud"></i> Live demo</a>
+  <a href="https://github.com/bigardone/calendlex" target="_blank" class="btn"><i class="fa fa-github"></i> Source code</a>
+</div>
+
 
 [last part]: /blog/2021/12/01/building-a-simple-calendly-clone-with-phoenix-live-view-pt-5
 [BasicAuth plug]: https://hexdocs.pm/plug/Plug.BasicAuth.html
