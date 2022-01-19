@@ -6,6 +6,21 @@ tags: elixir, phoenix, liveview
 image: "https://bigardone.dev/images/blog/2021-12-20-building-a-simple-calendly-clone-with-phoenix-live-view-pt-6/post-meta.png"
 ---
 
+<div class="index">
+  <p>This post belongs to the <strong>Building a simple Calendly clone with Phoenix LiveView</strong> series.</p>
+  <ol>
+    <li><a href="/blog/2021/11/06/building-a-simple-calendly-clone-with-phoenix-live-view-pt-1">Introduction.</a></li>
+    <li><a href="/blog/2021/11/08/building-a-simple-calendly-clone-with-phoenix-live-view-pt-2">Generating the initial project and domain models.</a></li>
+    <li><a href="/blog/2021/11/11/building-a-simple-calendly-clone-with-phoenix-live-view-pt-3">The event type selection page.</a></li>
+    <li><a href="/blog/2021/11/22/building-a-simple-calendly-clone-with-phoenix-live-view-pt-4">Rendering the monthly calendar.</a></li>
+    <li><a href="/blog/2021/12/01/building-a-simple-calendly-clone-with-phoenix-live-view-pt-5">Booking time slots for an event type.</a></li>
+    <li><a href="/blog/2021/12/20/building-a-simple-calendly-clone-with-phoenix-live-view-pt-6">Managing event types, part one.</a></li>
+    <li>Coming soon...</li>
+  </ol>
+  <a href="https://github.com/bigardone/calendlex" target="_blank"><i class="fa fa-github"></i> Source code</a><br>
+  <a href="https://calendlex.herokuapp.com/" target="_blank"><i class="fa fa-cloud"></i> Live demo</a>
+</div>
+
 In the [last part] of the series, we generated the available time slots for a given data and rendered them as clickable items in the calendar's live view. We also implemented the booking form, which schedules a new event for the selected event type, date, and time slot. In this part, we are going to start implementing the private side of our application, in which we will be able to manage the existing event types and create new ones. Let's get cracking!
 
 ## The private admin scope
